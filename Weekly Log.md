@@ -29,5 +29,7 @@ One issue I identified is the 2020/21 season, which was heavily affected by COVI
 
 I therefore need to decide whether to exclude 2020/21 from the main analysis or compare it separately as a useful sensitivity check.
 
+## AI Use
 
+Microsoft Copilot was used to help brainstorm potential research questions, review the scope of the proposed analysis, refine written weekly reflections and provide feedback on the analysis plan. Statistical decisions, R implementation, interpretation and presentation conclusions were completed and verified independently.
  
