@@ -29,7 +29,18 @@ One issue I identified is the 2020/21 season, which was heavily affected by COVI
 
 I therefore need to decide whether to exclude 2020/21 from the main analysis or compare it separately as a useful sensitivity check.
 
+### wc 23/11/2026
+
+This week I prepared the football data for my analysis in R. I selected the five completed seasons from 2021/22 to 2025/26, giving 1,900 matches. I excluded 2020/21 from the main analysis because COVID restrictions significantly reduced crowd attendance, which could distort an investigation focused on home advantage.
+
+I validated the selected data by checking for missing values, duplicate matches, valid result codes and consistency between the recorded Full Time Result and the final score. I then transformed each match into two team-level observations, representing the home and away teams separately. Each observation was assigned a venue and a Win, Draw or Loss result.
+
+Finally, I arranged the matches by season, team and date and created consecutive-result variables for the Markov analysis. Transitions were kept within individual seasons to avoid linking matches across summer breaks, when squads, managers and league membership may change. This produced 3,800 team-level observations and 3,700 valid transitions.
+I also used a separate Git branch and pull request to practise version control before merging the completed preparation work into the main repository.
+
 ## AI Use
 
-Microsoft Copilot was used to help brainstorm potential research questions, review the scope of the proposed analysis, refine written weekly reflections and provide feedback on the analysis plan. Statistical decisions, R implementation, interpretation and presentation conclusions were completed and verified independently.
+Microsoft Copilot was used to support the development of this project by helping to brainstorm and refine the research question, review the proposed analytical scope, and structure the weekly work plan. It was also used to explain R and Git concepts, provide example base R code for data preparation, suggest validation checks, and refine the wording of weekly contribution logs.
+
+The suggested code and methodology were reviewed, adapted and run independently. Dataset selection, methodological decisions, validation of outputs, interpretation of results and conclusions remain my responsibility. Copilot outputs were treated as guidance rather than accepted without verification.
  
